@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ComprasGo</title>
+    <meta name="description" content="ComprasGo">
+    <meta name="keywords" content="comprasGo">
+
+    <!-- Place favicon.ico in the root directory-->
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="styles/animate.min.css">
+
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Magnific Popup-->
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+
+    <!-- Owl carousel-->
+    <!-- <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css"> -->
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+    <!-- Google Fonts-->
+    <!--
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,700italic,700%7CNothing+You+Could+Do" rel="stylesheet">
+-->
+    <!-- Main Stylesheet-->
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=1648525985388074";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="wrapper h-card">
+        <!-- BEGIN NAV-->
+        <!--<div class="main-nav">
+      <nav>
+        <ul>
+          <li><a href="index.html#intro">Intro</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#expirience">Expirience</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#clients">Clinets</a></li>
+          <li><a href="index.html#contacts">Contacts</a></li>
+          <li><a href="blog.html" class="external">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="btn-icon btn-nav">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>-->
+        <!-- END NAV-->
+        <!-- BEGIN LOGO -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-10 col-md-8 col-xs-1">
+                    <div class="img-logo">
+                        <img src="images/logoCG-blanco.svg" alt="Photo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END LOGO -->
+
+        <!-- BEGIN HEADER-->
+        <section id="intro" class="section section-bg-img section-bg-overlay section-bottom-fall">
+            <div class="bg"></div>
+            <div class="section-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <br/>
+                            <h3>Lo que necesites con entrega a domicilio en 60 minutos.</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12">
+                            <br/>
+                            <p class="cabecera">Supermaxi, Mi Comisariato, Gran Akí, Coral, Fybeca, Pharmacy's y demás establecimientos en tu ciudad.</p>
+                        </div>
+                    </div>
+
+                    <div class="row" id="form1">
+                        <form id="formulario1">
+                            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6">
+                                <div class="input-group">
+                                    <input type="email" id="correo" name="correo" class="form-control input-lg" placeholder="Correo electrónico" required/>
+                                    <span class="input-group-btn">
+                                  <input class="btn btn-lg btn-primary" value="REGISTRARME" type="submit" onclick="registrar()"/>
+                                </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row" id="form2">
+                        <form id="formulario2">
+                            <div class="col-lg-5 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-8">
+                                <div class="form-group">
+                                    <input type="email" id="correo2" name="correo2" class="form-control input-lg" placeholder="Correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="submit" onclick="registrarMovil()" />
+                                    <!--<button class="btn btn-lg btn-block btn-primary" type="button">REGISTRARME</button> -->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-6 col-xs-offset-1">
+                            <br/>
+                            <p class="registro">Regístrate y obtén el <strong>ENVIO GRATIS</strong> en tu primer pedido.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--
+        <div class="container">
+          <div class="intro">
+            <header class="heading"><i data-wow-delay="0.1s" class="fa fa-4x fa-hand-peace-o wow fadeInDown"></i>
+              <h1 class="wow zoomIn"><span class="name">I am <span class="fn">Joanna Doe</span></span><span class="animated-letters category"><b class="is-visible">Designer</b><b>Creator</b><b>Magician</b></span></h1>
+              <div class="separator wow zoomIn"></div>
+            </header>
+
+            <div data-wow-delay="0.1s" class="wow fadeInUp"><a href="#contacts" class="btn btn-bordered btn-go">Let's get to work</a></div>
+          </div>
+
+        </div> -->
+
+            </div>
+            <!-- <canvas id="particles"></canvas> -->
+        </section>
+        <div class="cel" id="img-cel">
+            <img src="images/CG_mockupPhone_front.png" alt="Photo" />
+        </div>
+
+        <div class="cel" id="img-cel-2">
+            <img src="images/CG_mockupPhone_front_3.png" alt="Photo" />
+        </div>
+
+        <!-- END HEADER-->
+
+        <!-- BEGIN ABOUT SECTION-->
+        <section id="about" class="section section-top-fall section-bottom-fall">
+            <div class="section-inner">
+                <div class="container">
+                    <header class="heading">
+                    </header>
+                    <div class="row services">
+
+                        <div class="col-lg-4 col-md-4 col-xs-10 foto">
+                            <div class="site-photo"><img src="images/photo.jpg" height="250" alt="Photo" class="photo"></div>
+                            <h3 class="titulo">Tus productos y establecimientos favoritos</h3>
+                            <p class="parrafo5">Seleccionamos cada productos directamente de la percha; si no lo encontramos te llamaremos y buscaremos una alternativa.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-10 foto">
+                            <div class="site-photo"><img src="images/photo.jpg" height="250" alt="Photo" class="photo"></div>
+                            <h3 class="titulo">Servicio de entrega el mismo día</h3>
+                            <p class="parrafo5">Compra ahora y recíbelo cuando quieras; te llevaremos tu pedido en minutos ó a la hora que lo programes.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-10 foto">
+                            <div class="site-photo"><img src="images/photo.jpg" height="250" alt="Photo" class="photo"></div>
+                            <h3 style="margin-bottom:45px" class="titulo">Directamente a tu puerta</h3>
+                            <p class="parrafo5">Nuestros asistentes dejarán tu pedido donde desees.Tu casa, tu oficina, la casa de tu mamá... <br/> ¡No hay problema!
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row" style="margin-top:100px;">
+                        <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-2" style="text-align: right;">
+                            <h2 class="titulo2">Menos tiempo, menos stress</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5 col-sm-6 col-sm-offset-6 col-xs-8 col-xs-offset-4" style="text-align: right;">
+                            <p class="parrafo">No hay pretexto para salir de casa o la oficina; encuentra todo lo que necesites y no te preocupes por lo demás.</p>
+                            <p class="parrafo3"><strong>El trabajo es nuestro, el tiempo libre tuyo.</strong></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div>
+            <img src="images/CG_mockupPhone_side.png" alt="Photo" class="cel2">
+        </div>
+        <!-- END ABOUT SECTION-->
+
+        <!-- BEGIN EXPIRIENCE SECTION-->
+        <section id="expirience" class="section section-bg-light section-top-fall">
+            <div class="section-inner">
+                <div class="container">
+                    <header class="heading">
+                        <h2 class="titulo1">LA NUEVA EVOLUCIÓN DE TUS COMPRAS DIARIAS</h2>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                            <p class="parrafo5">Con <span style="color:#6500cb">ComprasGo</span> mantén tu día libre de visitas inesperadas al supermercaso ó farmacias.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12">
+                            <p class="parrafo6">- Sin montos mínimos</p>
+                        </div>
+                        <div class="col-lg-4  col-md-4 col-sm-12 col-xs-12">
+                            <p class="parrafo6">- Más de 2.000 productos</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12">
+                            <p class="parrafo6">- Cuando y donde quieras</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12">
+                            <div class="separator1"></div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="reg1">
+                        <form id="formulario3">
+                            <div class="col-lg-6 col-lg-offset-3col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+                                <div class="input-group">
+                                    <input type="email" id="correo3" name="correo3" class="form-control input-lg" placeholder="Correo electrónico">
+                                    <span class="input-group-btn">
+                                  <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="submit" onclick="registrar2()"/></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row" id="reg2">
+                        <form id="formulario4">
+                            <div class="col-lg-6 col-lg-offset-3col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" id="correo4" name="correo4" class="form-control input-lg" placeholder="Correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="submit" onclick="registrarMovil2()" />
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                            <p class="parrafo4">Solicita acceso anticipado y experimenta nuestras ventajas</p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- END EXPERIENCE SECTION-->
+
+        <!-- BEGIN SECTION 5 -->
+        <section id="intro" class="section section-bg1-img section-bg-overlay">
+            <div class="bg1"></div>
+            <div class="section-inner1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12" id="titulo">
+                            <h2>¿Necesitas algo más?</h2>
+                            <p class="parrafo">Buscaremos por tí los productos que quieras en los establecimientos que desees... así de fácil.</p>
+                            <p class="parrafo"><span style="color:#6500cb; font-weight:bold">ComprasGo</span> estará disponible en Guayaquil y Quito; próximamente en más ciudades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION 5 -->
+
+        <!-- BEGIN SECTION 6 -->
+        <section id="intro" class="section section-bg2-img section-bg-overlay">
+            <div class="bg2"></div>
+            <div class="section-inner1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6  col-sm-12 col-xs-12">
+                            <h2 class="titulo3">Mejora tus ingresos</h2>
+                            <p class="parrafo7">Gane dinero haciendo compras y entragando a domicilio, dando a los clientes más tiempo para hacer las actividades que gustan.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-3  col-xs-12">
+                            <div class="form-group">
+                                <input class="btn btn-lg btn-primary btn-block" class="form-control" value="QUIERO SER ASISTENTE DE COMPRAS" onclick="abrirForm()">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION 6 -->
+
+        <!-- BEGIN SECTION 7-->
+        <section id="projects" class="section">
+            <div class="section-inner2">
+                <div class="section-inner3">
+                    <div class="container">
+
+                        <div class="row" id="footer">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <img src="images/logoCG-full.png" alt="Photo">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align:center">
+                                <p class="correo1">hola@comprasgo.com</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-6 col-lg-offset-6 col-md-6 col-sm-7 col-sm-offset-4 col-md-offset-6">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-1"><img src="images/Facebook-color.svg" class="redes-sociales"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-1"><img src="images/Twitter-color.svg" class="redes-sociales"></div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-1"><img src="images/Instagram-color.svg" class="redes-sociales"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="footer2">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <img src="images/logoCG-full.png" alt="Photo" class="logo-bottom">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-lg-offset-8 col-md-6 col-sm-7 col-sm-offset-4 col-md-offset-6 col-xs-10 col-xs-offset-3">
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"><img src="images/Facebook-color.svg" alt="Photo" class="redes-sociales"></div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"><img src="images/Twitter-color.svg" alt="Photo" class="redes-sociales"></div>
+                                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"><img src="images/Instagram-color.svg" alt="Photo" class="redes-sociales"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" tyle="text-align:center">
+                                <p class="correo1">hola@comprasgo.com</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="parrafo8">Orgullosamente hecho en Ecuador</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p class="parrafo8 derecha">ComprasGo 2017 y sus servicios no están necesariamente afiliados ni respaldados por los establecimientos mencionados en este sitio.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <!-- BEGIN SECTION 7-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="titulo-modal">
+                            <h2><strong>¡Gracias por registrarte!</strong></h2>
+                        </div>
+                        <div class="texto-compartir">
+                            <p class="parrafo-modal">Estamos dando los últimos retoques a comprasGo y deseamos con estusiamos que seas uno delos primeros usuarios en probarlo.</p>
+                            <p class="parrafo-modal">Tan pronto esté listo te enviaremos un email para que descargues nuestra app desde Google Play o iTunes; Recuerda que tu primer pedido tiene ENVIO GRATIS</p>
+                            <p class="parrafo-modal black"><strong>Comparte con tus amigos, eso nos hará populares... sólo a nosotros :).</strong></p>
+                        </div>
+
+                        <div class="row" style="text-align: center" id='compartir-desk'>
+                            <div class="col-md-6 col-xs-6 fb-share-button" data-href="https://comprasgo-b7e59.firebaseapp.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcomprasgo-b7e59.firebaseapp.com%2F&amp;src=sdkpreparse">Compartir</a>
+                            </div>
+
+                            <div class="col-md-6 col-xs-6">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://comprasgo-b7e59.firebaseapp.com/" data-lang="es" data-size="large">Twittear</a>
+                                <script>
+                                    ! function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="row" style="text-align: center" id='compartir-movil'>
+                            <div class="col-md-4 fb-share-button" data-href="https://comprasgo-b7e59.firebaseapp.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcomprasgo-b7e59.firebaseapp.com%2F&amp;src=sdkpreparse">Compartir</a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://comprasgo-b7e59.firebaseapp.com/" data-lang="es" data-size="large">Twittear</a>
+                                <script>
+                                    ! function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0],
+                                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s);
+                                            js.id = id;
+                                            js.src = p + '://platform.twitter.com/widgets.js';
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, 'script', 'twitter-wjs');
+                                </script>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="whatsapp://send" data-text="Lo que necesites con entrega a domicilio en 60 minutos." data-href="" class="wa_btn wa_btn_s" style="display:block">Compartir</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEGIN FORM -->
+        <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="titulo-modal">
+                            <h2><strong>¡Únete al equipo!</strong></h2>
+                        </div>
+
+                        <p class="parrafo-modal">Buscamos personas entusiastas y colaborativas; mejora tus ingresos con <span class="logo">ComprasGO</span></p>
+                        <div class="row">
+                            <form id="formulario5">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Nombre completo" class="form-control formulario" name="nombres" id="nombres" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="email" placeholder="Correo electrónico" class="form-control formulario" name="correo5" id="correo5" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Teléfono" class="form-control formulario" name="telefono" id="telefono" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ciudad" class="form-control formulario" name="ciudad" id="ciudad" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="btn btn-lg btn-primary btn-block" value="REGISTRARME" type="submit" onclick="enviarForm()" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+        <!-- jQuery-->
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+
+        <!-- Instafeed-->
+        <script src="plugins/instafeed/instafeed.min.js"></script>
+
+        <!-- Google Maps API-->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
+
+        <!-- Magnific Popup-->
+        <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- One Page Nav-->
+        <script src="plugins/one-page-nav/jquery.nav.js"></script>
+
+        <!-- Owl Carousel-->
+        <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+
+        <!-- Shuffle-->
+        <script src="plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
+
+        <!-- Twitter Fetcher-->
+        <script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script>
+
+        <!-- Validate-->
+        <script src="plugins/jquery-validate/jquery.validate.min.js"></script>
+
+        <!-- WOW-->
+        <script src="plugins/wowjs/wow.min.js"></script>
+
+        <!-- Main Scripts-->
+        <script src="scripts/main.js"></script>
+
+        <!-- Start of Async Drift Code -->
+
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/jquery.validate.min.js"></script>
+        <script src="scripts/index.js"></script>
+
+        <script>
+            ! function() {
+                var t;
+                if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                    t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n;
+                            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e, n, o, i;
+                        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                            n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+                    });
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('3uwa774dxezc');
+        </script>
+        <!-- End of Async Drift Code -->
+
+
+
+
+</body>
+
+
+
+</html>
