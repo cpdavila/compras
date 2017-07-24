@@ -3749,7 +3749,7 @@ p.correo1 {
     }
     .section-bg1-img .bg1 {
         background-repeat: no-repeat;
-        background-position: 67% 3%
+        background-position: 67% 0s%
     }
     .redes-sociales {
         -webkit-transform: scale(1.0);
