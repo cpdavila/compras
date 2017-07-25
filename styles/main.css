@@ -68,6 +68,19 @@ span.logo {
     transform: scale(1.5);
 }
 
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #7b9447;
+    border-color: #7b9447;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    background-color: #add855;
+    border-color: #add855;
+}
+
 
 /*@font-face {
 font-family: 'thebit';
@@ -251,7 +264,7 @@ form p {
 }
 
 .form-control.error {
-    border: 4px solid;
+    border: 2px solid;
     border-color: #b32f2d;
 }
 
@@ -543,6 +556,7 @@ a.alignright {
     left: 0;
     width: 100%;
     height: 150px;
+    /*height: 75px;*/
     z-index: 5;
 }
 
@@ -555,6 +569,7 @@ a.alignright {
 .section-bottom-fall:before,
 .lte-ie9 .section-bottom-fall .before {
     top: -149px;
+    /*top: -75px;*/
 }
 
 .section-top-rise:after,
@@ -648,6 +663,7 @@ a.alignright {
 
 [class*="section-bottom"] .section-inner {
     padding-bottom: 75px;
+    /*padding-bottom: 30px;*/
 }
 
 [class*="section-bottom"]+.section {
@@ -685,7 +701,7 @@ a.alignright {
 }
 
 .section-top-fall:before {
-    background: linear-gradient(to bottom left, transparent, transparent 50%, #fff 50%, #fff);
+    background: linear-gradient(to bottom left, transparent 50%, transparent 50%, #fff 50%, #fff);
 }
 
 .section-top-fall.section-bg-dark:before {
@@ -3400,7 +3416,7 @@ p.correo1 {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
     .cel {
         position: absolute;
         right: -95px;
@@ -3421,6 +3437,15 @@ p.correo1 {
     }
     #img-cel-2 {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cel {
+        right: -131px;
+        top: 92px;
+        -webkit-transform: scale(0.56);
+        transform: scale(0.46);
     }
 }
 
@@ -3482,7 +3507,7 @@ p.correo1 {
         top: 2380px;
     }
     .img-logo {
-        margin-left: 130px;
+        margin-left: 90px;
     }
 }
 
@@ -3510,6 +3535,10 @@ p.correo1 {
     .redes-sociales {
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
+    }
+    .img-logo {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -3602,11 +3631,12 @@ p.correo1 {
     }
     .img-logo {
         position: absolute;
-        transform: scale(1.1);
+        transform: scale(0.9);
         z-index: 60;
         margin-top: 27px;
-        margin-left: 50px;
-        margin-right: 50px;
+        /*margin-left: 50px;*/
+        margin-left: 0px;
+        margin-right: 0px;
     }
     h2 {
         font-size: 2.1em;
@@ -3680,13 +3710,11 @@ p.correo1 {
     }
 }
 
-
-/*celular*/
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 399px) {
     .cel {
         position: absolute;
-        right: -185px;
+        /*right: -185px;*/
+        right: -123px;
         top: 4px;
         z-index: 200;
         -webkit-transform: scale(0.3);
@@ -3701,7 +3729,18 @@ p.correo1 {
     #img-cel {
         display: none;
     }
+    .img-logo {
+        position: absolute;
+        transform: scale(0.9);
+        z-index: 60;
+        margin-top: 27px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
+
+
+/*celular*/
 
 @media only screen and (max-width: 376px) {
     .redes-sociales {
@@ -3749,7 +3788,7 @@ p.correo1 {
     }
     .section-bg1-img .bg1 {
         background-repeat: no-repeat;
-        background-position: 67% 0s%
+        background-position: 67% 0%;
     }
     .redes-sociales {
         -webkit-transform: scale(1.0);
@@ -3759,6 +3798,9 @@ p.correo1 {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
+    /*[class*="section-bottom"] {
+        margin-bottom: 25px;
+    }*/
 }
 
 
