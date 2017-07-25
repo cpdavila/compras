@@ -3397,7 +3397,8 @@ p.correo1 {
         z-index: 50;
     }
     .section-bg2-img .bg2 {
-        background-size: 86%;
+        /*background-size: 86%;*/
+        background-size: 60% 100%;
     }
     #titulo {
         margin-top: 300px;
@@ -3497,6 +3498,9 @@ p.correo1 {
     .cel2 {
         top: 2290px;
     }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -3509,9 +3513,10 @@ p.correo1 {
     .img-logo {
         margin-left: 90px;
     }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
+    }
 }
-
-@media only screen and (max-width: 636px) {}
 
 @media only screen and (max-width: 623px) {
     .cel {
@@ -3526,6 +3531,9 @@ p.correo1 {
         -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -3539,6 +3547,9 @@ p.correo1 {
     .img-logo {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
     }
 }
 
@@ -3661,6 +3672,12 @@ p.correo1 {
     #img-cel {
         display: none;
     }
+    .section-bg1-img .bg1 {
+        background-size: 100% 50%;
+    }
+    /*.section-bg1-img .bg1 {
+        background-size: 100% 50%;
+    }*/
 }
 
 @media only screen and (max-width: 415px) {
@@ -3680,6 +3697,9 @@ p.correo1 {
         z-index: 200;
         -webkit-transform: scale(0.42);
         transform: scale(0.44);
+    }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
     }
 }
 
@@ -3707,6 +3727,9 @@ p.correo1 {
         right: -106px;
         -webkit-transform: scale(0.4);
         transform: scale(0.4);
+    }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
     }
 }
 
@@ -3737,6 +3760,9 @@ p.correo1 {
         margin-left: 0px;
         margin-right: 0px;
     }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
+    }
 }
 
 
@@ -3764,6 +3790,9 @@ p.correo1 {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -3787,8 +3816,12 @@ p.correo1 {
         display: none;
     }
     .section-bg1-img .bg1 {
+        background-size: 100% 50%;
         background-repeat: no-repeat;
         background-position: 67% 0%;
+    }
+    .section-bg2-img .bg2 {
+        background-size: 100% 100%;
     }
     .redes-sociales {
         -webkit-transform: scale(1.0);
@@ -3839,6 +3872,12 @@ p.correo1 {
     .logo-bottom {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 316px) {
+    img.cel2 {
+        display: none;
     }
 }
 
