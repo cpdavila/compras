@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 
     <!-- Animate.css-->
-    <link rel="stylesheet" href="styles/animate.min.css">
+    <!-- <link rel="stylesheet" href="styles/animate.min.css">-->
 
     <!-- Normalize CSS-->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -27,7 +27,7 @@
     <!-- <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css"> -->
 
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="styles/font-awesome.min.css">-->
 
     <!-- Google Fonts-->
     <!--
@@ -74,29 +74,6 @@
     </script>
 
     <div class="wrapper h-card">
-        <!-- BEGIN NAV-->
-        <!--<div class="main-nav">
-      <nav>
-        <ul>
-          <li><a href="index.html#intro">Intro</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#expirience">Expirience</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#testimonials">Testimonials</a></li>
-          <li><a href="index.html#clients">Clinets</a></li>
-          <li><a href="index.html#contacts">Contacts</a></li>
-          <li><a href="blog.html" class="external">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="btn-icon btn-nav">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </div>-->
-        <!-- END NAV-->
         <!-- BEGIN LOGO -->
         <div class="container">
             <div class="row">
@@ -415,8 +392,8 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                            <span aria-hidden="true">&times;</span>
+                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="titulo-modal">
@@ -482,15 +459,63 @@
             </div>
         </div>
 
-        <!-- BEGIN FORM -->
+        <!-- BEGIN FORM MODAL 1 -->
+        <div class="modal fade" id="usuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="titulo-modal">
+                            <h2><strong>¡Únete al equipo!</strong></h2>
+                        </div>
+
+                        <p class="parrafo-modal">Buscamos personas entusiastas y colaborativas; mejora tus ingresos con <span class="logo">ComprasGO</span></p>
+                        <div class="row">
+                            <form id="userform">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Nombres" class="form-control formulario" name="userNombres" id="userNombres" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Apellidos" class="form-control formulario" name="userApellidos" id="userApellidos" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <input type="email" placeholder="Correo electrónico" class="form-control formulario" name="userCorreo" id="userCorreo" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Ciudad" class="form-control formulario" name="userCiudad" id="userCiudad" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Sector" class="form-control formulario" name="userSector" id="userSector" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="btn btn-lg btn-primary btn-block" value="REGISTRARME" type="submit" onclick="userForm()" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FORM MODAL 1  -->
+
+        <!-- BEGIN FORM MODAL -->
         <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <div class="titulo-modal">
@@ -502,13 +527,16 @@
                             <form id="formulario5">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Nombre completo" class="form-control formulario" name="nombres" id="nombres" />
+                                        <input type="text" placeholder="Nombres" class="form-control formulario" name="nombres" id="nombres" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Apellidos" class="form-control formulario" name="apellidos" id="apellidos" />
                                     </div>
                                     <div class="form-group ">
                                         <input type="email" placeholder="Correo electrónico" class="form-control formulario" name="correo5" id="correo5" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" placeholder="Teléfono" class="form-control formulario" name="telefono" id="telefono" />
+                                        <input type="number" placeholder="Teléfono" class="form-control formulario" name="telefono" id="telefono" />
                                     </div>
                                     <div class="form-group">
                                         <input type="text" placeholder="Ciudad" class="form-control formulario" name="ciudad" id="ciudad" />
@@ -524,6 +552,7 @@
                 </div>
             </div>
         </div>
+        <!-- END FORM MODAL -->
 
 
 
@@ -546,13 +575,13 @@
         <script src="plugins/one-page-nav/jquery.nav.js"></script>
 
         <!-- Owl Carousel-->
-        <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+        <!-- <script src="plugins/owl-carousel/owl.carousel.min.js"></script> -->
 
         <!-- Shuffle-->
         <script src="plugins/shuffle/jquery.shuffle.modernizr.min.js"></script>
 
         <!-- Twitter Fetcher-->
-        <script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script>
+        <!-- <script src="plugins/twitter-fetcher/twitterFetcher_min.js"></script> -->
 
         <!-- Validate-->
         <script src="plugins/jquery-validate/jquery.validate.min.js"></script>
@@ -561,7 +590,7 @@
         <script src="plugins/wowjs/wow.min.js"></script>
 
         <!-- Main Scripts-->
-        <script src="scripts/main.js"></script>
+        <!--  <script src="scripts/main.js"></script> -->
 
         <!-- Start of Async Drift Code -->
 
