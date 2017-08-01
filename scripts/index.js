@@ -3,6 +3,7 @@
 })
 */
 var valCorreo = '';
+console.log(constantes.servicioWeb);
 
 function registrar() {
     var copiarCorreo = $('#correo').val();
@@ -167,7 +168,7 @@ function enviar(email) {
         }
     });
 
-    xhr.open("POST", constantes.serviciosWeb);
+    xhr.open("POST", constantes.servicioWeb);
     xhr.send(data);
 }
 
@@ -188,7 +189,7 @@ function enviar1() {
         }
     });
 
-    xhr.open("POST", constantes.serviciosWeb);
+    xhr.open("POST", constantes.servicioWeb);
 
     xhr.send(data);
 }
@@ -266,7 +267,7 @@ function enviarForm() {
                 }
             });
 
-            xhr.open("POST", constantes.serviciosWeb);
+            xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
@@ -349,7 +350,7 @@ function userForm() {
                 }
             });
 
-            xhr.open("POST", constantes.serviciosWeb);
+            xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
