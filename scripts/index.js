@@ -167,8 +167,7 @@ function enviar(email) {
         }
     });
 
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
-
+    xhr.open("POST", constantes.serviciosWeb);
     xhr.send(data);
 }
 
@@ -176,8 +175,8 @@ function enviar1() {
     var data = new FormData();
     data.append("tipo", "REGISTRO");
     data.append("correo", document.getElementById("correo1").value);
-    //     data.append("correo", document.getElementById("correo").value);
-    //   data.append("telefono", document.getElementById("telefono").value);
+    // data.append("correo", document.getElementById("correo").value);
+    // data.append("telefono", document.getElementById("telefono").value);
     // data.append("ciudad", document.getElementById("ciudad").value);
 
     var xhr = new XMLHttpRequest();
@@ -189,7 +188,7 @@ function enviar1() {
         }
     });
 
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+    xhr.open("POST", constantes.serviciosWeb);
 
     xhr.send(data);
 }
@@ -267,7 +266,7 @@ function enviarForm() {
                 }
             });
 
-            xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+            xhr.open("POST", constantes.serviciosWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
@@ -350,7 +349,7 @@ function userForm() {
                 }
             });
 
-            xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+            xhr.open("POST", constantes.serviciosWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
