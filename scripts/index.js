@@ -9,38 +9,49 @@ function registrar() {
     var copiarCorreo = $('#correo').val();
     $('#userCorreo').val(copiarCorreo);
 
-    $("#formulario1").validate({
-        rules: {
-            correo: {
-                required: true,
-                email: true,
+    var email = $('#correo').val();
+    valCorreo = 'correo';
+    $('#usuarioModal').modal();
 
-            }
-        },
-        messages: {
-            correo: {
-                required: "",
-                email: ""
-            }
-        },
-        submitHandler: function(form) {
-            var email = $('#correo').val();
-            valCorreo = 'correo';
-            $('#usuarioModal').modal();
-            //enviar(email);
-            //$('#myModal').modal();
-            //$('#correo').val('');
+    /* $("#formulario1").validate({
+         rules: {
+             correo: {
+                 required: true,
+                 email: true,
 
-        }
-    });
+             }
+         },
+         messages: {
+             correo: {
+                 required: "",
+                 email: ""
+             }
+         },
+         submitHandler: function(form) {
+             var email = $('#correo').val();
+             valCorreo = 'correo';
+             $('#usuarioModal').modal();
+             //enviar(email);
+             //$('#myModal').modal();
+             //$('#correo').val('');
+
+         }
+     });*/
 
 
 }
 
 
 function registrar2() {
+    var email = $('#correo3').val();
+    valCorreo = 'correo3';
+    var copiarCorreo = $('#correo3').val();
+    $('#userCorreo').val(copiarCorreo);
+    $('#usuarioModal').modal();
+    $('#correo3').val('');
 
-    $("#formulario3").validate({
+
+    /*$("#formulario3").validate({
         rules: {
             correo3: {
                 required: true,
@@ -67,7 +78,7 @@ function registrar2() {
             $('#correo3').val('');
 
         }
-    });
+    });*/
 
 
 }
